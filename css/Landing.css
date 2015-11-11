@@ -1,0 +1,13 @@
+.landing {
+  background: url(../images/a.jpg) no-repeat center fixed;
+  text-align: center;
+/*  display: block;*/
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        position: absolute;	
+top:0;
+bottom:0;
+right:0;
+left:0;
+}
