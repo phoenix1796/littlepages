@@ -12,15 +12,28 @@
     <link rel="stylesheet" type="text/css" href="css/Landing.css">
   </head>
   <body>
-  	<nav id="navbar" class="navbar navbar-light navbar-fixed-top" style="background-color:transparent">
-		<ul class="nav navbar-nav">
-			<a href="#" class="navbar-brand nav_brand">LittlePages.in</a>
-			<li class="nav-item"><a href="#" class="nav-link">Prices</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-			<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-		</ul>
+  	<nav id="navbar" class="navbar navbar-dark navbar-fixed-top bg-inverse">
+  		<ul class="nav navbar-nav">
+  			<a href="#" class="navbar-brand nav_brand">LittlePages.in</a>
+  			<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+  			<li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">ContactUs</a></li>
+  			<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+  		</ul>
+      <form action="" class="form-inline navbar-form pull-right">
+        <div class="form-group"><input type="email" placeholder="Enter Email" class="form-control form-control-sm"></div>
+        <div class="form-group"><input type="password" placeholder="Password" class="form-control form-control-sm"></div>
+        <div class="checkbox">
+          <label class="c-input c-checkbox" style="color:rgb(255,255,255)">
+            <input type="checkbox" id="remember">
+            <span class="c-indicator"></span>
+              Remember Me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-sm btn-primary">Sign in</button>
+      </form>
   	</nav>
-  	<div class="container-fluid">
+  	<div class="container">
   		<div class="row fullvp">
   			<div class="landing"></div>
   		</div>
@@ -37,7 +50,7 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
     <script type="text/javascript">
     var scrollMagicController = new ScrollMagic.Controller({addIndicators: true});
-    new ScrollMagic.Scene({triggerElement: '#trigger',duration: 300}).setTween("#navbar",{backgroundColor:'rgba(233, 241, 247, 0.6)'}).addTo(scrollMagicController);
+    new ScrollMagic.Scene({triggerElement: '#trigger',duration: 300}).setTween("#navbar",{backgroundColor:'rgba(0,0,0, 0.45)'}).addTo(scrollMagicController);
   </script>
   </body>
 </html>
