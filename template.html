@@ -12,33 +12,32 @@
     <link rel="stylesheet" type="text/css" href="css/Landing.css">
   </head>
   <body>
-  <div class="landing"></div>
-  	<nav id="navbar" class="navbar navbar-light navbar-fixed-top" style="background-color:#e3f2fd">
+  	<nav id="navbar" class="navbar navbar-light navbar-fixed-top" style="background-color:transparent">
 		<ul class="nav navbar-nav">
-			<a href="#" class="navbar-brand">LittlePages.in</a>
+			<a href="#" class="navbar-brand nav_brand">LittlePages.in</a>
 			<li class="nav-item"><a href="#" class="nav-link">Prices</a></li>
 			<li class="nav-item"><a href="#" class="nav-link">Features</a></li>
 			<li class="nav-item"><a href="#" class="nav-link">About</a></li>
 		</ul>
   	</nav>
-    <div id="content">
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-    <h1>Hello, world!</h1>
-    </div>
+  	<div class="container-fluid">
+  		<div class="row fullvp">
+  			<div class="landing"></div>
+  		</div>
+  		<div class="row fullvp" id="trigger">
+  			<h1>Lorem Ipsum Dolor</h1>
+  		</div>
+  	</div>
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
     <script type="text/javascript">
-    var scrollMagicController = new ScrollMagic();
-    var tween = TweenMax.to('#navbar', {
-      backgroundColor:'red'
-    });
-    var scene = new ScrollMagic.Scene({triggerElement: '#content'}).setTween(tween).addTo(scrollMagicController);
+    var scrollMagicController = new ScrollMagic.Controller({addIndicators: true});
+    new ScrollMagic.Scene({triggerElement: '#trigger',duration: 300}).setTween("#navbar",{backgroundColor:'rgba(233, 241, 247, 0.6)'}).addTo(scrollMagicController);
   </script>
   </body>
 </html>
