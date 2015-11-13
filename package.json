@@ -1,0 +1,28 @@
+{
+  "name": "littlepages",
+  "version": "0.0.0",
+  "description": "This is a \"little\" site to help consolidate study material together in a beautiful looking  and intriguing way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoenix1796/littlepages.git"
+  },
+  "keywords": [
+    "little",
+    "pages",
+    "littlepages"
+  ],
+  "author": "phoenix1796",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phoenix1796/littlepages/issues"
+  },
+  "homepage": "https://github.com/phoenix1796/littlepages#readme",
+  "dependencies": {
+    "cloudinary": "^1.2.5",
+    "express": "^4.13.3"
+  }
+}
